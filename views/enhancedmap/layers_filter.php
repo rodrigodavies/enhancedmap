@@ -46,6 +46,7 @@ if ($layers)
 					
 
 						<div id="kml_switch" class="category-filters layer-filters">
+							<table><tr>
 							<?php
 							foreach ($layers as $layer => $layer_info)
 							{
@@ -56,12 +57,14 @@ if ($layers)
 								$layer_link = (!$layer_url) ?
 									url::base().Kohana::config('upload.relative_directory').'/'.$layer_file :
 									$layer_url;
-								echo '<a href="#" id="layer_'. $layer .'"
-								onclick="switchLayer(\''.$layer.'\',\''.$layer_link.'\',\''.$layer_color.'\'); return false;"><div class="swatch" style="background-color:#'.$layer_color.'"></div>
-								<div>'.$layer_name.'</div></a>';
+								echo '<td><a href="#" id="layer_'. $layer .'"
+								onclick="switchLayer(\''.$layer.'\',\''.$layer_link.'\',\''.$layer_color.'\'); return false;"><div class="swatch" style="background-color:#'.$layer_color.'">
+								<td>'.$layer_name.'<td>&nbsp;</div></a>';
 							}
 							?>
-						
+						</tr>
+						<br/><br/>
+					</table>
 					</div>
 				</div>
 				<!-- /Layers -->

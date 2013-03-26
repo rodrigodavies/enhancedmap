@@ -57,7 +57,7 @@
 <td> -->
 
 				<!-- The map -->
-				<div class="map" id="map" style="width: 100%; height: 550px;"></div> 
+				<div class="map" id="map" style="width: 100%; height: 650px;"></div> 
 				<div id="mapStatus">
 					<div id="mapScale" style="border-right: solid 1px #999"></div>
 					<div id="mapMousePosition" style="min-width: 135px;border-right: solid 1px #999;text-align: center"></div>
@@ -82,11 +82,11 @@
 
 		<div id="controls">	
 				
-		<?php echo $div_layers_filter; ?>
+		<?php echo $div_layers_filter; ?><br/>
 			
 	
 	<!-- Time chooser -->
-	<?php echo $div_timeline; ?>
+	<!-- /* <?php echo $div_timeline; ?> */ -->
 	<!-- /Time chooser -->
 
 	
