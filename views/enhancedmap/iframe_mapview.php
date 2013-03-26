@@ -37,9 +37,11 @@
  * Developed by Etherton Technologies Ltd.
  */
 ?>
+
+<!--
 <div id="title">
 <h1><a href="<?php echo url::base(); ?>"><?php echo $site_name;?></a></h1>
-</div>
+</div> -->
 
 
 <!-- keep track of what status we're looking at -->
@@ -50,30 +52,12 @@
 
 
 
-<table>
+<!-- <table>
 <tr>
-<td>
-<!-- Controls -->
-		<div id="controls">	
-		
-	
-		
-		<?php echo $div_boolean_filter;?>
-				 
-		<?php echo $div_categories_filter;?>
-		
-		<?php echo $div_layers_filter; ?>
-		
-		<?php echo $div_shares_filter; ?>
-		
-	</div>
-	</td>
-	
-		<!-- /controls -->
-	<td>	
-		<!-- Map and time slider -->
+<td> -->
+
 				<!-- The map -->
-				<div class="map" id="map" style="width:<?php echo $width;?>px"></div>
+				<div class="map" id="map" style="width: 100%; height: 550px;"></div> 
 				<div id="mapStatus">
 					<div id="mapScale" style="border-right: solid 1px #999"></div>
 					<div id="mapMousePosition" style="min-width: 135px;border-right: solid 1px #999;text-align: center"></div>
@@ -95,17 +79,14 @@
 				</ul>   
 				
 				</div>
-			<!-- /Map and time slider -->
-	</td>
-	</tr>
-	</table>
-	
+
+		<div id="controls">	
+				
+		<?php echo $div_layers_filter; ?>
+			
 	
 	<!-- Time chooser -->
-	<?php								
-		echo $div_timeline;
-	
-	?>
+	<?php echo $div_timeline; ?>
 	<!-- /Time chooser -->
 
 	

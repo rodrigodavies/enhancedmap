@@ -84,7 +84,7 @@
 	
 	
 #controls{
-	width: 100px;
+	width: 100%px;
 	font-size: 8pt;
 	}
 
@@ -183,7 +183,7 @@ a.share{
 
 /* map */
 div.map {
-    border: black solid 1px;
+    border: transparent;
 }
 #mapStatus
 {
@@ -250,52 +250,6 @@ div.slider-holder {
 
 div.slider-holder label{
     color: #666666;
-}
-
-/*Status filtes*/
-div.stat-filters{
-    margin: 0 0 0px 0;
-}
-
-
-
-
-ul.status-filters li{
-    padding: 0;
-    margin-bottom: 4px;
-list-style-type:none;
-}
-
-ul.status-filters li a{
-    display: block;
-    padding-top:1px;
-    padding-bottom:1px;
-    font-size: 11px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #3F3F3F;
-    border: #97938A 1px solid;
-    position: relative;
-    overflow: hidden;
-	text-align:center;
-}
-
-ul.status-filters li a.active{
-    color: #FFFFFF;
-    background-color: #3484AC;
-    border: #3484AC 1px solid;
-}
-
-ul.status-filters li a:hover{
-    color: #FFFFFF;
-    background-color: #c7c3DA;
-    border: #3484AC 1px solid;
-}
-
-ul.status-filters li a.active:hover {
-    color: #FFFFFF;
-    background-color: #34c4DC;
-    border: #3484AC 1px solid;
 }
 
 

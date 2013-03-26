@@ -41,19 +41,11 @@ if ($layers)
 {
 	?>
 				<!-- Layers (KML/KMZ) -->
-				<div id="<?php echo $layer_id;?>" class="layer-filters ">
-					<div  class="cat-filters clearingfix layer-filters_header">
-						<strong><?php echo Kohana::lang('ui_main.layers_filter');?> 
-							<span>
-								[<a href="javascript:toggleLayer('kml_switch_link', 'kml_switch')" id="kml_switch_link">
-									<?php echo $show_on_load ? Kohana::lang('ui_main.hide') : Kohana::lang('ui_main.show'); ?>
-								</a>]
-							</span>
-						</strong>
-					</div>
+
+<div id="<?php echo $layer_id;?>" class="layer-filters ">
 					
-					<div>
-						<ul id="kml_switch" class="category-filters layer-filters" <?php if(!$show_on_load){echo 'style="display:none;"'; }?>>
+
+						<div id="kml_switch" class="category-filters layer-filters">
 							<?php
 							foreach ($layers as $layer => $layer_info)
 							{
@@ -64,12 +56,12 @@ if ($layers)
 								$layer_link = (!$layer_url) ?
 									url::base().Kohana::config('upload.relative_directory').'/'.$layer_file :
 									$layer_url;
-								echo '<li><a href="#" id="layer_'. $layer .'"
+								echo '<a href="#" id="layer_'. $layer .'"
 								onclick="switchLayer(\''.$layer.'\',\''.$layer_link.'\',\''.$layer_color.'\'); return false;"><div class="swatch" style="background-color:#'.$layer_color.'"></div>
-								<div>'.$layer_name.'</div></a></li>';
+								<div>'.$layer_name.'</div></a>';
 							}
 							?>
-						</ul>
+						
 					</div>
 				</div>
 				<!-- /Layers -->
